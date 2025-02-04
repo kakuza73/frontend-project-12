@@ -1,100 +1,64 @@
-export default {
+const ru = {
   translation: {
-    navBar: {
-      title: 'Hexlet Chat',
-      button: 'Выйти',
-    },
-    loginPage: {
-      title: 'Войти',
-      srcAlt: 'Войти',
-      form: {
-        username: 'Ваш ник',
-        password: 'Пароль',
-      },
-      button: 'Войти',
-      footer: {
-        text: 'Нет аккаунта? ',
-        signUpLink: 'Регистрация',
-      },
-    },
-    errorPage: {
-      title: 'Страница не найдена',
-      alt: 'Страница не найдена',
-      body: {
-        text: 'Но вы можете перейти ',
-        link: 'на главную страницу',
-      },
-    },
-    signUpPage: {
-      title: 'Регистрация',
-      srcAlt: 'Регистрация',
-      form: {
-        username: 'Имя пользователя',
-        password: 'Пароль',
-        confirmPassword: 'Подтвердите пароль',
-      },
-      button: 'Зарегистрироваться',
-    },
-    channelsContainer: {
-      title: 'Каналы',
-      prefix: '#',
+    buttons: {
+      cancel: 'Отменить',
+      channelManagement: 'Управление каналом',
+      logIn: 'Войти',
+      logOut: 'Выйти',
+      register: 'Зарегистрироваться',
       remove: 'Удалить',
       rename: 'Переименовать',
-      control: 'Управление каналом',
-    },
-    messagesContainer: {
-      messageCount: {
-        message_one: '{{count}} сообщение',
-        message_few: '{{count}} сообщения',
-        message_many: '{{count}} сообщений',
-      },
-      button: 'Отправить',
-      form: {
-        placeholder: 'Введите сообщение...',
-        label: 'Новое сообщение',
-      },
-    },
-    toast: {
-      channel: {
-        add: 'Канал создан',
-        edit: 'Канал переименован',
-        remove: 'Канал удалён',
-      },
-      errors: {
-        add: 'При создании канала произошла ошибка',
-        edit: 'При переименовании канала произошла ошибка',
-        remove: 'При удалении канала произошла ошибка',
-      },
-    },
-    schema: {
-      username: 'От 3 до 20 символов',
-      required: 'обязательное поле',
-      password: 'Не менее 6 символов',
-      confirmPassword: 'Пароли должны совпадать',
-    },
-    modal: {
-      addChannel: {
-        title: 'Добавить канал',
-        label: 'Имя канала',
-      },
-      editChannel: {
-        title: 'Переименовать канал',
-        label: 'Имя канала',
-      },
-      removeChannel: {
-        title: 'Удалить канал',
-        body: 'Уверены?',
-      },
-      buttons: {
-        close: 'Отменить',
-        submit: 'Отправить',
-        remove: 'Удалить',
-      },
-      error: 'Должно быть уникальным',
+      submit: 'Отправить',
     },
     errors: {
-      401: 'Неверные имя пользователя или пароль',
-      409: 'Такой пользователь уже существует',
+      alreadyExists: 'Такой пользователь уже существует',
+      checkPassword: 'Пароли должны совпадать',
+      incorrect: 'Неверные имя пользователя или пароль',
+      minLetter: 'Не менее 6 символов',
+      notOneOf: 'Должно быть уникальным',
+      rangeLetter: 'От 3 до 20 символов',
+      required: 'Обязательное поле',
+      unknown: 'Что-то пошло не так',
+      tokenExpired: 'Токен устарел. Повторите вход.',
+    },
+    fields: {
+      confirmPassword: 'Подтвердите пароль',
+      inputMessage: 'Введите сообщение...',
+      newMessage: 'Новое сообщение',
+      newPassword: 'new-password',
+      nickname: 'Ваш ник',
+      password: 'Пароль',
+      username: 'Имя пользователя',
+    },
+    notify: {
+      createdChannel: 'Канал создан',
+      networkError: 'Ошибка соединения',
+      removedChannel: 'Канал удалён',
+      renamedChannel: 'Канал переименован',
+      unauthorized: 'Произошла ошибка при загрузке данных',
+    },
+    ui: {
+      addChannel: 'Добавить канал',
+      channels: 'Каналы',
+      exist: 'Уже есть аккаунт? ',
+      goTo: 'Но вы можете перейти ',
+      hexletChat: 'Hexlet Chat',
+      mainPage: 'на главную страницу',
+      nameChannel: 'Имя канала',
+      noAccount: 'Нет аккаунта? ',
+      notFoundPage: 'Страница не найдена',
+      proof: 'Уверены?',
+      registration: 'Регистрация',
+      removeChannel: 'Удалить канал',
+      renameChannel: 'Переименовать канал',
+      updatePage: 'Обновить страницу',
+      counter: {
+        count_one: '{{count}} сообщение',
+        count_few: '{{count}} сообщения',
+        count_many: '{{count}} сообщений',
+      },
     },
   },
 };
+
+export default ru;

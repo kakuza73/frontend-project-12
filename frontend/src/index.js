@@ -1,16 +1,10 @@
-import React from 'react';
-import ReactDOM from 'react-dom/client';
-import { io } from 'socket.io-client';
-import 'bootstrap';
-import './assets/styles.scss';
-import initApp from './init';
+import './assets/application.scss';
+import { createRoot } from 'react-dom/client';
+import init from './init.jsx';
 
-const runApp = async () => {
-  const socket = io();
-  const app = await initApp(socket);
-
-  const chat = ReactDOM.createRoot(document.getElementById('chat'));
-  chat.render(<React.StrictMode>{app}</React.StrictMode>);
+const app = async () => {
+  const root = createRoot(document.getElementById('chat'));
+  root.render(await init());
 };
 
-runApp();
+app();

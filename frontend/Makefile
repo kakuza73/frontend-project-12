@@ -1,11 +1,8 @@
-install:
-	npm ci
-
 start:
-	npm start
+	npx start-server
 
 build:
-	npm build
+	npm run build
 
 lint:
-	npx eslint .
+	npx eslint
