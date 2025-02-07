@@ -1,5 +1,5 @@
 make build:
-	npm run build --prefix frontend
+	npm run build 
 
 make start:
 	npx serve -s frontend/dist -l 3000
