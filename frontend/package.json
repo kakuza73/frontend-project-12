@@ -4,7 +4,6 @@
   "version": "0.0.0",
   "proxy": "http://localhost:5001",
   "type": "module",
-  "main": "./frontend/src/index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",

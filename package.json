@@ -20,7 +20,9 @@
   "license": "ISC",
   "type": "module",
   "dependencies": {
-    "@hexlet/chat-server": "^2.0.4",
-    "serve": "^14.2.0"
+    "@hexlet/chat-server": "^2.0.4"
+  },
+  "devDependencies": {
+    "serve": "^14.2.4"
   }
 }
