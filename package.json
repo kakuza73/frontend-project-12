@@ -5,7 +5,7 @@
   "scripts": {
     "render-postbuild": "npm install --prefix frontend --legacy-peer-deps --production=false && cd ./frontend && npm run build",
     "build": "npm run build --prefix frontend",
-    "start": "npx serve -s frontend/dist",
+    "start": "npx serve -s frontend/dist -l 3000",
     "test": "echo \"Error: no test specified\" && exit 1",
     "postinstall": "npm --prefix ./frontend install"
   },
@@ -16,6 +16,7 @@
     "type": "git",
     "url": "git+https://github.com/kakuza73/frontend-project-12.git"
   },
+  "author": "Diana Zhiliakova",
   "license": "ISC",
   "type": "module",
   "dependencies": {
