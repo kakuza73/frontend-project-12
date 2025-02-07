@@ -4,7 +4,7 @@
   "description": "chat - slack",
 "scripts": {
   "render-postbuild": "npm install --prefix frontend --legacy-peer-deps --production=false && cd ./frontend && npm run build",
-  "build": "npm run build --prefix",
+  "build": "npm run build --prefix ./frontend",
   "start": "npx serve -s frontend/dist -l 3000",
   "test": "echo \"Error: no test specified\" && exit 1",
   "postinstall": "npm install --prefix ./frontend"
