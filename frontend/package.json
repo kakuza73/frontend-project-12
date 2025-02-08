@@ -4,12 +4,12 @@
   "version": "0.0.0",
   "proxy": "http://localhost:5001",
   "type": "module",
-  "main": "./frontend/src/index.js",
+  "main": "./src/index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "start": "vite preview --port=$PORT --host"
+    "start": "vite preview"
   },
   "dependencies": {
     "@eslint/js": "^9.17.0",

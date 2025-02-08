@@ -1,6 +1,7 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+// https://vite.dev/config/
 export default defineConfig({
   plugins: [react()],
   server: {
@@ -13,14 +14,11 @@ export default defineConfig({
       },
       cors: false,
       '/socket.io': {
+        // target: 'ws://localhost:5001',
         target: 'ws://localhost:5001',
         ws: true,
         rewriteWsOrigin: true,
       },
     },
-  },
-  preview: {
-    port: 5002,
-    allowedHosts: ['chat-project-wohn.onrender.com'],
   },
 });

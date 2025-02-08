@@ -2,7 +2,7 @@
   "name": "@hexlet/code",
   "version": "1.0.0",
   "description": "chat - slack",
-  "main": "./frontend/src/index.js",
+  "main": "index.js",
   "scripts": {
     "render-postbuild": "npm install --prefix frontend --legacy-peer-deps --production=false && cd ./frontend && npm run build",
     "build": "npm run build --prefix frontend",
@@ -15,14 +15,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/kakuza73/frontend-project-12.git"
+    "url": "git+https://github.com/Diana-coder-tech/frontend-project-12.git"
   },
+  "author": "Diana Zhiliakova",
   "license": "ISC",
   "type": "module",
   "dependencies": {
     "@hexlet/chat-server": "^2.0.4"
-  },
-  "devDependencies": {
-    "serve": "^14.2.4"
   }
 }
