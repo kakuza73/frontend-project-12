@@ -15,9 +15,8 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/Diana-coder-tech/frontend-project-12.git"
+    "url": "git+https://github.com/kakuza73/frontend-project-12.git"
   },
-  "author": "Diana Zhiliakova",
   "license": "ISC",
   "type": "module",
   "dependencies": {
