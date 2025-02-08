@@ -11,13 +11,12 @@ export default defineConfig({
         changeOrigin: false,
         secure: false,
       },
-      cors: false,
       '/socket.io': {
         target: 'ws://localhost:5001',
         ws: true,
-        rewriteWsOrigin: true,
       },
-      allowedHosts: ['chat-project-wohn.onrender.com']
     },
+    cors: false,
+    allowedHosts: true,
   },
 });
