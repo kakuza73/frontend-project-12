@@ -4,10 +4,11 @@
   "version": "0.0.0",
   "proxy": "http://localhost:5001",
   "type": "module",
-"scripts": {
-  "start": "vite preview --port=$PORT --host",
-  "build": "npm run build --prefix frontend",
-  "render-postbuild": "npm install --prefix frontend --legacy-peer-deps --production=false && cd ./frontend && npm run build"
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint .",
+    "render-postbuild": "npm install --prefix frontend --legacy-peer-deps --production=false && cd ./frontend && npm run build"
 },
   "dependencies": {
     "@eslint/js": "^9.17.0",
