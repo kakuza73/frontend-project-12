@@ -9,7 +9,7 @@
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "start": "vite build -s dist -l $PORT --single"
+    "start": "vite build dist -l $PORT --single"
   },
   "dependencies": {
     "@eslint/js": "^9.17.0",
