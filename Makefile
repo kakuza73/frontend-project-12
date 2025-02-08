@@ -1,9 +1,8 @@
 make build:
-	npm run build 
+	npm run build
 
 make start:
-	npx serve -s frontend/dist -l 3000
+	npx start-server -s ./frontend/dist
 
 make install:
 	npm ci
-

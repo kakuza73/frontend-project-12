@@ -4,12 +4,13 @@
   "version": "0.0.0",
   "proxy": "http://localhost:5001",
   "type": "module",
+  "main": "./frontend/src/index.js",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
-    "render-postbuild": "npm install --prefix frontend --legacy-peer-deps --production=false && cd ./frontend && npm run build"
-},
+    "start": "vite preview"
+  },
   "dependencies": {
     "@eslint/js": "^9.17.0",
     "@reduxjs/toolkit": "^2.5.1",
