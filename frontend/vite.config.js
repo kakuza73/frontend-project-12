@@ -4,8 +4,8 @@ import react from '@vitejs/plugin-react';
 export default defineConfig({
   plugins: [react()],
   server: {
-    port: 5002,
-    proxy: {
+    port: process.env.PORT || 5002,  // Используем переменную окружения PORT
+    proxy: process.env.NODE_ENV === 'development' ? {
       '/api': {
         target: 'http://localhost:5001',
         changeOrigin: false,
@@ -15,8 +15,7 @@ export default defineConfig({
         target: 'ws://localhost:5001',
         ws: true,
       },
-    },
-    cors: false,
-    allowedHosts: true,
+    } : {},  // В продакшне убираем proxy
+    cors: true, // Разрешаем CORS
   },
 });
